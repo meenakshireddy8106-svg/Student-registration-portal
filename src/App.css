@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  font-family: "Poppins", sans-serif;
+  color: #3c2030;
+  background: #fff7fb;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(214, 166, 83, 0.15), transparent 25%),
+    radial-gradient(circle at 90% 20%, rgba(222, 102, 151, 0.12), transparent 25%),
+    linear-gradient(135deg, #fff8fb, #fff1f6);
+}
+
+.navbar {
+  min-height: 76px;
+  padding: 16px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #4b1734, #7c2b54);
+  border-bottom: 3px solid #d6a653;
+  box-shadow: 0 5px 20px rgba(67, 20, 45, 0.2);
+}
+
+.brand {
+  color: #f7d58a;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #f7d58a;
+}
+
+.home-page,
+.registration-page {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 65px 0;
+}
+
+.hero-card {
+  text-align: center;
+  padding: 75px 30px;
+  border: 1px solid #e4bb72;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255,255,255,.95), rgba(255,231,242,.9));
+  box-shadow: 0 20px 50px rgba(92, 35, 62, 0.12);
+}
+
+.sparkle {
+  color: #d6a653;
+  font-size: 28px;
+  letter-spacing: 12px;
+  margin-bottom: 15px;
+}
+
+.eyebrow {
+  color: #a46a13;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.hero-card h1,
+.form-heading h1 {
+  font-family: "Playfair Display", serif;
+  color: #57183a;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  margin: 12px 0;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  color: #6d5260;
+}
+
+.gold-button,
+.submit-button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: linear-gradient(135deg, #c88b2a, #e1b85e);
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(183, 125, 30, 0.25);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.info-card {
+  padding: 28px;
+  background: white;
+  border: 1px solid #f0d6e1;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.info-card span {
+  font-size: 30px;
+}
+
+.info-card h3 {
+  margin: 10px 0 5px;
+  color: #641c42;
+}
+
+.info-card p {
+  color: #755c68;
+  font-size: 0.92rem;
+}
+
+.form-card {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 42px;
+  border-radius: 25px;
+  border: 1px solid #e4bb72;
+  box-shadow: 0 20px 50px rgba(92, 35, 62, 0.13);
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-heading h1 {
+  font-size: 2.7rem;
+}
+
+.form-heading p:last-child {
+  color: #755c68;
+}
+
+form label {
+  display: block;
+  margin: 16px 0 7px;
+  font-weight: 600;
+  color: #57183a;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dfc5d1;
+  border-radius: 10px;
+  outline: none;
+  font: inherit;
+  color: #3c2030;
+  background: #fffafd;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #d6a653;
+  box-shadow: 0 0 0 3px rgba(214, 166, 83, .12);
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+
+.success-box {
+  margin-top: 25px;
+  padding: 24px;
+  background: #fff6df;
+  border: 1px solid #d6a653;
+  border-radius: 16px;
+}
+
+.success-box h2 {
+  color: #7a4d0c;
+  margin-bottom: 14px;
+}
+
+.success-box p {
+  margin: 8px 0;
+  color: #563d22;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  color: #7c2b54;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 15px 5%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    padding: 25px;
+  }
+}
